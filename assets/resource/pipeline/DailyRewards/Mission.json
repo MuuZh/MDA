@@ -1,0 +1,123 @@
+{
+    "Mission": {
+        "desc": "任务列表入口",
+        "next": [
+            "MissionStart",
+            "EndTask"
+        ]
+    },
+    "MissionStart": {
+        "desc": "任务列表",
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1116,
+                    50,
+                    20,
+                    20
+                ],
+                "template": [
+                    "RedDot.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    -10,
+                    10,
+                    0,
+                    0
+                ]
+            }
+        },
+        "post_wait_freezes": 500,
+        "next": [
+            "[JumpBack]MissionRedDot",
+            "EndTask"
+        ]
+    },
+    "MissionRedDot": {
+        "desc": "任务的红点",
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    453,
+                    106,
+                    375,
+                    28
+                ],
+                "template": [
+                    "RedDot.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    -10,
+                    10,
+                    0,
+                    0
+                ]
+            }
+        },
+        "next": [
+            "MissionClaimed",
+            "[JumpBack]MissionClaimAll",
+            "[JumpBack]RewardConfirm"
+        ]
+    },
+    "MissionClaimed": {
+        "desc": "已领取",
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
+                "roi": [
+                    707,
+                    630,
+                    108,
+                    35
+                ],
+                "lower": [
+                    100,
+                    100,
+                    100
+                ],
+                "upper": [
+                    180,
+                    180,
+                    180
+                ],
+                "count": 500
+            }
+        },
+        "next": [
+            "PageClose"
+        ]
+    },
+    "MissionClaimAll": {
+        "desc": "任务奖励领取",
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    707,
+                    630,
+                    108,
+                    35
+                ],
+                "expected": [
+                    "全部领取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        }
+    }
+}
