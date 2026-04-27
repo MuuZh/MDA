@@ -46,6 +46,10 @@
             ]
         }
     ],
+    "agent": {
+        "child_exec": "agent/go-service",
+        "child_args": []
+    },
     "task": [],
     "group": [
         {

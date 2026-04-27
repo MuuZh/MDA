@@ -452,3 +452,7 @@ tools/ImageCropper/**/*.png
 
 config
 debug
+
+# Go
+agent/go-service/vendor/
+agent/go-service/debug/
