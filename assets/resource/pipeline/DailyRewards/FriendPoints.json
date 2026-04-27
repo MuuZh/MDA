@@ -59,7 +59,8 @@
             }
         },
         "next": [
-            "ReceiveConfirm"
+            "ReceiveConfirm",
+            "SendAndReceive"
         ]
     },
     "ReceiveConfirm": {
@@ -81,6 +82,9 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 500
+        "post_wait_freezes": 500,
+        "next": [
+            "PageClose"
+        ]
     }
 }
