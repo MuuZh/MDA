@@ -4,6 +4,7 @@ import (
 	"os"
 	"path/filepath"
 
+	"github.com/1204244136/MDA/agent/go-service/pkg/i18n"
 	"github.com/1204244136/MDA/agent/go-service/pkg/pienv"
 	"github.com/MaaXYZ/maa-framework-go/v4"
 	"github.com/bytedance/sonic"
@@ -24,6 +25,7 @@ func main() {
 		Msg("MDA Agent Service")
 
 	pienv.Init()
+	i18n.Init()
 
 	if len(os.Args) < 2 {
 		log.Fatal().Msg("Usage: go-service <identifier>")

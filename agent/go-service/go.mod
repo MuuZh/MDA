@@ -6,6 +6,7 @@ require (
 	github.com/MaaXYZ/maa-framework-go/v4 v4.0.0-beta.14
 	github.com/bytedance/sonic v1.15.0
 	github.com/rs/zerolog v1.34.0
+	golang.org/x/sys v0.22.0
 )
 
 require (
@@ -18,5 +19,4 @@ require (
 	github.com/mattn/go-isatty v0.0.19 // indirect
 	github.com/twitchyliquid64/golang-asm v0.15.1 // indirect
 	golang.org/x/arch v0.0.0-20210923205945-b76863e36670 // indirect
-	golang.org/x/sys v0.22.0 // indirect
 )

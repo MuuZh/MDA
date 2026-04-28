@@ -1,0 +1,17 @@
+{
+    "tasker.aspect_ratio_warning.title": "🚨 Warning: Resolution requirement not met! 🚨",
+    "tasker.aspect_ratio_warning.stopped": "🚫 Task has been force-stopped",
+    "tasker.aspect_ratio_warning.desc": "💡 Adjust the resolution and run the task again.",
+    "tasker.aspect_ratio_warning.controller_label": "Current controller:",
+    "tasker.aspect_ratio_warning.current_resolution": "Current resolution:",
+    "tasker.aspect_ratio_warning.requirement_label": "Required:",
+    "tasker.aspect_ratio_warning.requirement_exact": "Exact %dx%d; other 16:9 resolutions such as 1920x1080 are not accepted",
+    "tasker.aspect_ratio_warning.requirement_ratio": "16:9 aspect ratio; for example 3840x2160, 2560x1440, 1920x1080, 1280x720",
+    "tasker.hdr_warning.title": "⚠️ Warning: HDR is enabled",
+    "tasker.hdr_warning.desc": "💡 HDR may cause issues with image recognition.",
+    "tasker.hdr_warning.recommend_title": "👇 Recommendations:",
+    "tasker.hdr_warning.recommend_1": "  • Disable HDR in your monitor settings",
+    "tasker.hdr_warning.recommend_2": "  • Or turn off HDR in Windows Settings → System → Display → HDR",
+    "tasker.hdr_warning.recommend_3": "  • Restart the task after disabling HDR",
+    "tasker.hdr_warning.note": "ℹ️ The task will continue, but may fail."
+}
