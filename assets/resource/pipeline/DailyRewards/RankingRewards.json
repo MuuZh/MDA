@@ -13,7 +13,7 @@
             "type": "And",
             "param": {
                 "all_of": [
-                    "ArkFlagInHall",
+                    "NavigationArkVisible",
                     "ArkRedDotInHall"
                 ]
             }
@@ -22,10 +22,10 @@
             "type": "Click"
         },
         "next": [
-            "RankingRewardFlagInArk"
+            "DailyRewardsRankingRewardVisible"
         ]
     },
-    "RankingRewardFlagInArk": {
+    "DailyRewardsRankingRewardVisible": {
         "desc": "处于方舟内部",
         "recognition": {
             "type": "OCR",

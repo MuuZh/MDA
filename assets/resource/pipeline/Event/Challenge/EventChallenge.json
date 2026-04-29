@@ -28,7 +28,7 @@
             "type": "And",
             "param": {
                 "all_of": [
-                    "ChallengeStageFlag"
+                    "EventChallengeStageVisible"
                 ]
             }
         },
@@ -84,7 +84,7 @@
             "StartBattle"
         ]
     },
-    "ChallengeStageFlag": {
+    "EventChallengeStageVisible": {
         "desc": "活动挑战入口的标识",
         "recognition": {
             "type": "OCR",

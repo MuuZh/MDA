@@ -35,11 +35,11 @@
             }
         },
         "next": [
-            "EmailFlag",
+            "DailyRewardsEmailVisible",
             "EmailStart"
         ]
     },
-    "EmailFlag": {
+    "DailyRewardsEmailVisible": {
         "desc": "邮箱的标志",
         "recognition": {
             "type": "OCR",

@@ -35,7 +35,7 @@
             "type": "And",
             "param": {
                 "all_of": [
-                    "LargeEventEventFlag"
+                    "LargeEventMainVisible"
                 ]
             }
         },
@@ -50,7 +50,7 @@
             "EndTask"
         ]
     },
-    "LargeEventEventFlag": {
+    "LargeEventMainVisible": {
         "desc": "处于活动地区的标识",
         "recognition": {
             "type": "OCR",
@@ -70,7 +70,7 @@
     "LargeEventGoBack": {
         "desc": "返回活动地区",
         "next": [
-            "LargeEventEventFlag",
+            "LargeEventMainVisible",
             "[JumpBack]CommonGoBack"
         ]
     }

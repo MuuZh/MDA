@@ -20,10 +20,10 @@
             "type": "Click"
         },
         "next": [
-            "DefenseRewardsFlag"
+            "OutpostDefenseRewardsVisible"
         ]
     },
-    "DefenseRewardsFlag": {
+    "OutpostDefenseRewardsVisible": {
         "desc": "防御奖励标志",
         "recognition": {
             "type": "OCR",
@@ -76,7 +76,7 @@
             "type": "And",
             "param": {
                 "all_of": [
-                    "WipeOutFlag",
+                    "OutpostWipeOutVisible",
                     "WipeOutRedDot"
                 ]
             }
@@ -134,7 +134,7 @@
             "type": "Click"
         }
     },
-    "WipeOutFlag": {
+    "OutpostWipeOutVisible": {
         "desc": "一举歼灭的文本",
         "recognition": {
             "type": "OCR",

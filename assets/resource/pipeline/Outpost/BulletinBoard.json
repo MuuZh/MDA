@@ -28,10 +28,10 @@
             }
         },
         "next": [
-            "BulletinBoardFlag"
+            "OutpostBulletinBoardVisible"
         ]
     },
-    "BulletinBoardFlag": {
+    "OutpostBulletinBoardVisible": {
         "desc": "派遣公告栏标志",
         "recognition": {
             "type": "OCR",

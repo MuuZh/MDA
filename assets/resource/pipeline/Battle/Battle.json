@@ -5,7 +5,7 @@
             "type": "And",
             "param": {
                 "all_of": [
-                    "BattleFlag"
+                    "BattleMainVisible"
                 ]
             }
         },
@@ -23,8 +23,8 @@
             "type": "And",
             "param": {
                 "all_of": [
-                    "QuickBattleFlag",
-                    "CanQuickBattleFlag"
+                    "BattleQuickBattleVisible",
+                    "BattleQuickBattleAvailable"
                 ]
             }
         },
@@ -206,8 +206,8 @@
             "type": "And",
             "param": {
                 "all_of": [
-                    "BattleFlag",
-                    "CanBattleFlag"
+                    "BattleMainVisible",
+                    "BattleAvailable"
                 ]
             }
         },
@@ -238,7 +238,7 @@
             "type": "Click"
         }
     },
-    "QuickBattleFlag": {
+    "BattleQuickBattleVisible": {
         "desc": "快速战斗的标识",
         "recognition": {
             "type": "OCR",
@@ -255,12 +255,12 @@
             }
         }
     },
-    "CanQuickBattleFlag": {
+    "BattleQuickBattleAvailable": {
         "desc": "可以快速战斗的标识",
         "recognition": {
             "type": "ColorMatch",
             "param": {
-                "roi": "QuickBattleFlag",
+                "roi": "BattleQuickBattleVisible",
                 "lower": [
                     200,
                     200,
@@ -275,7 +275,7 @@
             }
         }
     },
-    "BattleFlag": {
+    "BattleMainVisible": {
         "desc": "战斗的标识",
         "recognition": {
             "type": "OCR",
@@ -292,12 +292,12 @@
             }
         }
     },
-    "CanBattleFlag": {
+    "BattleAvailable": {
         "desc": "可以战斗的标识",
         "recognition": {
             "type": "ColorMatch",
             "param": {
-                "roi": "BattleFlag",
+                "roi": "BattleMainVisible",
                 "lower": [
                     200,
                     200,

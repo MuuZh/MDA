@@ -35,54 +35,9 @@
             }
         },
         "next": [
-            "[JumpBack]FreeBattle",
+            "[JumpBack]ArenaFreeBattle",
             "ArenaCornerVisible",
             "[JumpBack]CommonGoBack"
-        ]
-    },
-    "FreeBattle": {
-        "desc": "免费战斗",
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    749,
-                    579,
-                    54,
-                    26
-                ],
-                "expected": [
-                    "免费"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_wait_freezes": 1000,
-        "next": [
-            "FreeBattleFlag"
-        ]
-    },
-    "FreeBattleFlag": {
-        "desc": "检测免费战斗的页面",
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    526,
-                    566,
-                    59,
-                    22
-                ],
-                "expected": [
-                    "快速战斗"
-                ]
-            }
-        },
-        "next": [
-            "[JumpBack]QuickBattleCheck",
-            "StartBattle"
         ]
     },
     "QuickBattleCheck": {

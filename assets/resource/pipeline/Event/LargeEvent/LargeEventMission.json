@@ -28,10 +28,10 @@
             }
         },
         "next": [
-            "LargeEventMissionFlag"
+            "LargeEventMissionVisible"
         ]
     },
-    "LargeEventMissionFlag": {
+    "LargeEventMissionVisible": {
         "desc": "大活动任务内部的标识",
         "recognition": {
             "type": "OCR",

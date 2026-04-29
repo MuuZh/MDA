@@ -5,7 +5,7 @@
             "type": "And",
             "param": {
                 "all_of": [
-                    "DialogueFlag"
+                    "DialoguesMainVisible"
                 ]
             }
         },
@@ -85,7 +85,7 @@
             }
         }
     },
-    "DialogueFlag": {
+    "DialoguesMainVisible": {
         "desc": "剧情的标识",
         "recognition": {
             "type": "OCR",

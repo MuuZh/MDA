@@ -12,7 +12,7 @@
             "type": "And",
             "param": {
                 "all_of": [
-                    "ArkFlagInHall"
+                    "NavigationArkVisible"
                 ]
             }
         },

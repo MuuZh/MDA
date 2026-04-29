@@ -13,7 +13,7 @@
             "type": "And",
             "param": {
                 "all_of": [
-                    "FreeRecruitFlag"
+                    "DailyRewardsFreeRecruitVisible"
                 ]
             }
         },
@@ -32,7 +32,7 @@
             "type": "And",
             "param": {
                 "all_of": [
-                    "FreeRecruitFlag"
+                    "DailyRewardsFreeRecruitVisible"
                 ]
             }
         },
@@ -85,7 +85,7 @@
         },
         "post_wait_freezes": 1000
     },
-    "FreeRecruitFlag": {
+    "DailyRewardsFreeRecruitVisible": {
         "desc": "免费招募的标识",
         "recognition": {
             "type": "OCR",
