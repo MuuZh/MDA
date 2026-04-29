@@ -28,6 +28,7 @@
         "next": [
             "[JumpBack]ActionConfirm",
             "[JumpBack]RewardConfirm",
+            "SpecialReward",
             "EndTask"
         ]
     },
