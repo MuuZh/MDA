@@ -175,7 +175,8 @@
         },
         "action": {
             "type": "Click"
-        }
+        },
+        "post_delay": 3000
     },
     "BattleSettlement": {
         "desc": "战斗结算",
