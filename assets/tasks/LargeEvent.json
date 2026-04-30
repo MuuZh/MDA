@@ -19,7 +19,7 @@
                     "enabled": false
                 }
             },
-"option": [
+            "option": [
                 "LargeEventTheme",
                 "LargeEventStoryPriority",
                 "LargeEventContent"
