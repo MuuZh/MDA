@@ -25,7 +25,7 @@
                     "name": "Interception",
                     "option": {
                         "InterceptionType": "AnomalyInterception",
-                        "AnomalyInterceptionTarget": "AnomalyKraken",
+                        "AnomalyInterceptionTarget": "InterceptionAnomalyKraken",
                         "ManualInterceptionBattle": "No"
                     }
                 },
@@ -41,19 +41,19 @@
                     "name": "Advise",
                     "option": {
                         "NikkeAdvise": "Yes",
-                        "EpisodeReward": "Yes",
-                        "EpisodeViewingReward": "Yes"
+                        "AdviseEpisodeReward": "Yes",
+                        "AdviseEpisodeViewingReward": "Yes"
                     }
                 },
                 {
                     "name": "DailyRewards",
                     "option": {
-                        "FriendPoints": "Yes",
-                        "Email": "Yes",
-                        "RankingRewards": "Yes",
-                        "Mission": "Yes",
+                        "DailyRewardsFriendPoints": "Yes",
+                        "DailyRewardsEmail": "Yes",
+                        "DailyRewardsRankingRewards": "Yes",
+                        "DailyRewardsMission": "Yes",
                         "DailyRewardsPassMain": "Yes",
-                        "FreeRecruit": "Yes"
+                        "DailyRewardsFreeRecruit": "Yes"
                     }
                 }
             ]

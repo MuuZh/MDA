@@ -26,11 +26,11 @@
         },
         "post_wait_freezes": 1000,
         "next": [
-            "TowerTask",
+            "TribeTowerTask",
             "ArkEnterTribeTower"
         ]
     },
-    "TowerTask": {
+    "TribeTowerTask": {
         "desc": "无限之塔的任务",
         "recognition": {
             "type": "And",
@@ -46,7 +46,7 @@
             "TribeTowerEnterMissilisTower",
             "TribeTowerEnterTetraTower",
             "TribeTowerEnterPilgrimTower",
-            "BaseEndTask"
+            "CommonEndTask"
         ]
     },
     "TribeTowerEnterCommonTower": {
@@ -70,17 +70,17 @@
             "type": "Click"
         },
         "next": [
-            "TowerBattle1"
+            "TribeTowerStageChooseFlow"
         ]
     },
-    "TowerBattle1": {
-        "desc": "无限之塔战斗流程1",
+    "TribeTowerStageChooseFlow": {
+        "desc": "无限之塔选择关卡流程",
         "next": [
-            "[JumpBack]ChooseStage",
-            "TowerBattle2"
+            "[JumpBack]TribeTowerChooseStage",
+            "TribeTowerBattleFlow"
         ]
     },
-    "ChooseStage": {
+    "TribeTowerChooseStage": {
         "desc": "选择关卡",
         "recognition": {
             "type": "OCR",
@@ -108,12 +108,12 @@
             }
         }
     },
-    "TowerBattle2": {
-        "desc": "无限之塔战斗流程2",
+    "TribeTowerBattleFlow": {
+        "desc": "无限之塔战斗流程",
         "next": [
             "[JumpBack]BattleStart",
             "[JumpBack]CommonCloseSale",
-            "TowerTask",
+            "TribeTowerTask",
             "[JumpBack]CommonGoBack"
         ]
     },
@@ -147,7 +147,7 @@
         },
         "post_wait_freezes": 1000,
         "next": [
-            "TowerBattle1"
+            "TribeTowerStageChooseFlow"
         ]
     },
     "TribeTowerEnterMissilisTower": {
@@ -180,7 +180,7 @@
         },
         "post_wait_freezes": 1000,
         "next": [
-            "TowerBattle1"
+            "TribeTowerStageChooseFlow"
         ]
     },
     "TribeTowerEnterTetraTower": {
@@ -213,7 +213,7 @@
         },
         "post_wait_freezes": 1000,
         "next": [
-            "TowerBattle1"
+            "TribeTowerStageChooseFlow"
         ]
     },
     "TribeTowerEnterPilgrimTower": {
@@ -246,7 +246,7 @@
         },
         "post_wait_freezes": 1000,
         "next": [
-            "TowerBattle1"
+            "TribeTowerStageChooseFlow"
         ]
     },
     "TribeTowerMainPageEntered": {

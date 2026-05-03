@@ -60,7 +60,7 @@
             "[JumpBack]CommonShop",
             "[JumpBack]ArenaShop",
             "[JumpBack]RecyclingShop",
-            "BaseEndTask"
+            "CommonEndTask"
         ]
     },
     "ShopConfirmPurchase": {

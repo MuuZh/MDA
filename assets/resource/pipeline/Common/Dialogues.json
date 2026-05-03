@@ -1,21 +1,4 @@
 {
-    "AdviseStory": {
-        "desc": "咨询剧情",
-        "recognition": {
-            "type": "And",
-            "param": {
-                "all_of": [
-                    "DialoguesMainVisible"
-                ]
-            }
-        },
-        "next": [
-            "[JumpBack]DialoguesSkipStory",
-            "[JumpBack]DialoguesClickContinue",
-            "[JumpBack]DialoguesClickOption",
-            "BaseEndTask"
-        ]
-    },
     "DialoguesSkipStory": {
         "desc": "跳过剧情",
         "recognition": {

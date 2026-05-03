@@ -1,13 +1,13 @@
 {
-    "RankingRewards": {
+    "DailyRewardsRankingRewards": {
         "desc": "排名奖励入口",
         "max_hit": 1,
         "next": [
-            "RankingRewardsStart",
-            "BaseEndTask"
+            "DailyRewardsRankingRewardsStart",
+            "CommonEndTask"
         ]
     },
-    "RankingRewardsStart": {
+    "DailyRewardsRankingRewardsStart": {
         "desc": "排名奖励",
         "recognition": {
             "type": "And",
@@ -86,10 +86,10 @@
         },
         "post_wait_freezes": 2000,
         "next": [
-            "RankingRewardClaim"
+            "DailyRewardsRankingRewardClaim"
         ]
     },
-    "RankingRewardClaim": {
+    "DailyRewardsRankingRewardClaim": {
         "desc": "排名奖励领取",
         "recognition": {
             "type": "OCR",

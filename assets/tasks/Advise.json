@@ -7,7 +7,7 @@
             "description": "$task.Advise.description",
             "option": [
                 "NikkeAdvise",
-                "EpisodeViewingReward"
+                "AdviseEpisodeViewingReward"
             ],
             "group": [
                 "daily"
@@ -23,32 +23,32 @@
                 {
                     "name": "Yes",
                     "pipeline_override": {
-                        "NikkeEnterAdvise": {
+                        "AdviseEnterAdvisePage": {
                             "enabled": true
                         }
                     },
                     "option": [
-                        "EpisodeReward"
+                        "AdviseEpisodeReward"
                     ]
                 },
                 {
                     "name": "No",
                     "pipeline_override": {
-                        "NikkeEnterAdvise": {
+                        "AdviseEnterAdvisePage": {
                             "enabled": false
                         }
                     }
                 }
             ]
         },
-        "EpisodeReward": {
+        "AdviseEpisodeReward": {
             "type": "switch",
-            "label": "$option.EpisodeReward.label",
+            "label": "$option.AdviseEpisodeReward.label",
             "cases": [
                 {
                     "name": "Yes",
                     "pipeline_override": {
-                        "EpisodeReward": {
+                        "AdviseEpisodeReward": {
                             "enabled": true
                         }
                     }
@@ -56,21 +56,21 @@
                 {
                     "name": "No",
                     "pipeline_override": {
-                        "EpisodeReward": {
+                        "AdviseEpisodeReward": {
                             "enabled": false
                         }
                     }
                 }
             ]
         },
-        "EpisodeViewingReward": {
+        "AdviseEpisodeViewingReward": {
             "type": "switch",
-            "label": "$option.EpisodeViewingReward.label",
+            "label": "$option.AdviseEpisodeViewingReward.label",
             "cases": [
                 {
                     "name": "Yes",
                     "pipeline_override": {
-                        "EpisodeViewing": {
+                        "AdviseEpisodeViewing": {
                             "enabled": true
                         }
                     }
@@ -78,7 +78,7 @@
                 {
                     "name": "No",
                     "pipeline_override": {
-                        "EpisodeViewing": {
+                        "AdviseEpisodeViewing": {
                             "enabled": false
                         }
                     }

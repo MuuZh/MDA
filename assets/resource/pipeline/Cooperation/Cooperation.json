@@ -19,8 +19,8 @@
         },
         "next": [
             "CooperationSearch",
-            "[JumpBack]SlideBanner",
-            "BaseEndTask"
+            "[JumpBack]CooperationSlideBanner",
+            "CommonEndTask"
         ]
     },
     "CooperationSearch": {
@@ -75,7 +75,7 @@
             "NavigationEnterHall"
         ]
     },
-    "SlideBanner": {
+    "CooperationSlideBanner": {
         "max_hit": 10,
         "desc": "滑动横幅",
         "action": {

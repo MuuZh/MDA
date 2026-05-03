@@ -27,13 +27,13 @@
             }
         },
         "next": [
-            "[JumpBack]LevelD",
-            "[JumpBack]LevelS",
-            "[JumpBack]InterceptionEX",
+            "[JumpBack]LevelDChoose",
+            "[JumpBack]LevelSChoose",
+            "[JumpBack]InterceptionEXChoose",
             "BattleStart"
         ]
     },
-    "LevelD": {
+    "LevelDChoose": {
         "desc": "LevelD",
         "enabled": false,
         "recognition": {
@@ -54,7 +54,7 @@
             "type": "Click"
         }
     },
-    "LevelS": {
+    "LevelSChoose": {
         "desc": "LevelS",
         "enabled": false,
         "recognition": {
@@ -75,7 +75,7 @@
             "type": "Click"
         }
     },
-    "InterceptionEX": {
+    "InterceptionEXChoose": {
         "desc": "特殊目标拦截战",
         "enabled": false,
         "recognition": {

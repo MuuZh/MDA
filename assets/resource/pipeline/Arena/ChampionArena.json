@@ -72,11 +72,11 @@
             "type": "Click"
         },
         "next": [
-            "[JumpBack]CheerReward",
+            "[JumpBack]ArenaClickCheerReward",
             "ChampionArenaCompetitionFlow"
         ]
     },
-    "CheerReward": {
+    "ArenaClickCheerReward": {
         "desc": "应援奖励",
         "recognition": {
             "type": "OCR",
@@ -126,10 +126,10 @@
             }
         },
         "next": [
-            "CheerUp"
+            "ArenaClickCheerUp"
         ]
     },
-    "CheerUp": {
+    "ArenaClickCheerUp": {
         "desc": "应援",
         "recognition": {
             "type": "OCR",
@@ -151,7 +151,7 @@
         "post_wait_freezes": 500,
         "next": [
             "ChampionArenaCheerUpAvailableFlow",
-            "CheerUpRight"
+            "ArenaClickCheerUpRight"
         ]
     },
     "ChampionArenaCheerUpAvailable": {
@@ -182,10 +182,10 @@
             }
         },
         "next": [
-            "CheerUpLeft"
+            "ArenaClickCheerUpLeft"
         ]
     },
-    "CheerUpLeft": {
+    "ArenaClickCheerUpLeft": {
         "desc": "应援左边",
         "recognition": {
             "type": "OCR",
@@ -208,7 +208,7 @@
             "CommonConfirmAction"
         ]
     },
-    "CheerUpRight": {
+    "ArenaClickCheerUpRight": {
         "desc": "应援右边",
         "recognition": {
             "type": "OCR",

@@ -57,86 +57,86 @@
             "label": "$option.NormalInterceptionLevel.label",
             "cases": [
                 {
-                    "name": "LevelD",
-                    "label": "$option.LevelD.label",
+                    "name": "LevelDChoose",
+                    "label": "$option.LevelDChoose.label",
                     "pipeline_override": {
-                        "LevelD": {
+                        "LevelDChoose": {
                             "enabled": true
                         }
                     }
                 },
                 {
-                    "name": "LevelS",
-                    "label": "$option.LevelS.label",
+                    "name": "LevelSChoose",
+                    "label": "$option.LevelSChoose.label",
                     "pipeline_override": {
-                        "LevelS": {
+                        "LevelSChoose": {
                             "enabled": true
                         }
                     }
                 },
                 {
-                    "name": "InterceptionEX",
-                    "label": "$option.InterceptionEX.label",
+                    "name": "InterceptionEXChoose",
+                    "label": "$option.InterceptionEXChoose.label",
                     "pipeline_override": {
-                        "InterceptionEX": {
+                        "InterceptionEXChoose": {
                             "enabled": true
                         }
                     }
                 }
             ],
-            "default_case": "InterceptionEX"
+            "default_case": "InterceptionEXChoose"
         },
         "AnomalyInterceptionTarget": {
             "type": "select",
             "label": "$option.AnomalyInterceptionTarget.label",
             "cases": [
                 {
-                    "name": "AnomalyKraken",
-                    "label": "$option.AnomalyKraken.label",
+                    "name": "InterceptionAnomalyKraken",
+                    "label": "$option.InterceptionAnomalyKraken.label",
                     "pipeline_override": {
-                        "AnomalyKraken": {
+                        "InterceptionAnomalyKraken": {
                             "enabled": true
                         }
                     }
                 },
                 {
-                    "name": "AnomalyMirrorContainer",
-                    "label": "$option.AnomalyMirrorContainer.label",
+                    "name": "InterceptionAnomalyMirrorContainer",
+                    "label": "$option.InterceptionAnomalyMirrorContainer.label",
                     "pipeline_override": {
-                        "AnomalyMirrorContainer": {
+                        "InterceptionAnomalyMirrorContainer": {
                             "enabled": true
                         }
                     }
                 },
                 {
-                    "name": "AnomalyIndivilia",
-                    "label": "$option.AnomalyIndivilia.label",
+                    "name": "InterceptionAnomalyIndivilia",
+                    "label": "$option.InterceptionAnomalyIndivilia.label",
                     "pipeline_override": {
-                        "AnomalyIndivilia": {
+                        "InterceptionAnomalyIndivilia": {
                             "enabled": true
                         }
                     }
                 },
                 {
-                    "name": "AnomalyUltra",
-                    "label": "$option.AnomalyUltra.label",
+                    "name": "InterceptionAnomalyUltra",
+                    "label": "$option.InterceptionAnomalyUltra.label",
                     "pipeline_override": {
-                        "AnomalyUltra": {
+                        "InterceptionAnomalyUltra": {
                             "enabled": true
                         }
                     }
                 },
                 {
-                    "name": "AnomalyHarvester",
-                    "label": "$option.AnomalyHarvester.label",
+                    "name": "InterceptionAnomalyHarvester",
+                    "label": "$option.InterceptionAnomalyHarvester.label",
                     "pipeline_override": {
-                        "AnomalyHarvester": {
+                        "InterceptionAnomalyHarvester": {
                             "enabled": true
                         }
                     }
                 }
             ],
-            "default_case": "AnomalyKraken"
+            "default_case": "InterceptionAnomalyKraken"
         },
         "ManualInterceptionBattle": {
             "type": "switch",

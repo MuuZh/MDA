@@ -59,13 +59,13 @@
             }
         },
         "next": [
-            "[JumpBack]BulletinBoardClaim",
-            "[JumpBack]BulletinBoardDispatch",
+            "[JumpBack]OutpostBulletinBoardClaim",
+            "[JumpBack]OutpostBulletinBoardDispatch",
             "OutpostMainPageEntered",
             "[JumpBack]CommonGoBack"
         ]
     },
-    "BulletinBoardClaim": {
+    "OutpostBulletinBoardClaim": {
         "desc": "全部领取",
         "max_hit": 1,
         "recognition": {
@@ -88,10 +88,10 @@
         "post_wait_freezes": 1000,
         "next": [
             "[JumpBack]CommonConfirmReward",
-            "BaseEndTask"
+            "CommonEndTask"
         ]
     },
-    "BulletinBoardDispatch": {
+    "OutpostBulletinBoardDispatch": {
         "desc": "全部派遣",
         "max_hit": 1,
         "recognition": {
@@ -114,7 +114,7 @@
         "post_wait_freezes": 1000,
         "next": [
             "OutpostConfirmDispatch",
-            "BaseEndTask"
+            "CommonEndTask"
         ]
     },
     "OutpostConfirmDispatch": {

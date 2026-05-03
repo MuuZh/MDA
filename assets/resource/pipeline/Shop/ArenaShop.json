@@ -5,13 +5,13 @@
         "next": [
             "[JumpBack]ShopEnterArenaShop",
             "[JumpBack]ShopConfirmPurchase",
-            "[JumpBack]FireCodeManualPurchase",
-            "[JumpBack]WaterCodeManualPurchase",
-            "[JumpBack]WindCodeManualPurchase",
-            "[JumpBack]ElectricCodeManualPurchase",
-            "[JumpBack]IronCodeManualPurchase",
-            "[JumpBack]CodeManualSelectionBoxPurchase",
-            "BaseEndTask"
+            "[JumpBack]ShopFireCodeManualPurchase",
+            "[JumpBack]ShopWaterCodeManualPurchase",
+            "[JumpBack]ShopWindCodeManualPurchase",
+            "[JumpBack]ShopElectricCodeManualPurchase",
+            "[JumpBack]ShopIronCodeManualPurchase",
+            "[JumpBack]ShopCodeManualSelectionBoxPurchase",
+            "CommonEndTask"
         ]
     },
     "ShopEnterArenaShop": {
@@ -56,7 +56,7 @@
             }
         }
     },
-    "FireCodeManualPurchase": {
+    "ShopFireCodeManualPurchase": {
         "desc": "购买燃烧属性代码手册",
         "enabled": false,
         "recognition": {
@@ -76,7 +76,7 @@
             "type": "Click"
         }
     },
-    "WaterCodeManualPurchase": {
+    "ShopWaterCodeManualPurchase": {
         "desc": "购买水冷属性代码手册",
         "enabled": false,
         "recognition": {
@@ -96,7 +96,7 @@
             "type": "Click"
         }
     },
-    "WindCodeManualPurchase": {
+    "ShopWindCodeManualPurchase": {
         "desc": "购买风压属性代码手册",
         "enabled": false,
         "recognition": {
@@ -116,7 +116,7 @@
             "type": "Click"
         }
     },
-    "ElectricCodeManualPurchase": {
+    "ShopElectricCodeManualPurchase": {
         "desc": "购买电击属性代码手册",
         "enabled": false,
         "recognition": {
@@ -136,7 +136,7 @@
             "type": "Click"
         }
     },
-    "IronCodeManualPurchase": {
+    "ShopIronCodeManualPurchase": {
         "desc": "购买铁甲属性代码手册",
         "enabled": false,
         "recognition": {
@@ -156,7 +156,7 @@
             "type": "Click"
         }
     },
-    "CodeManualSelectionBoxPurchase": {
+    "ShopCodeManualSelectionBoxPurchase": {
         "desc": "购买代码手册选择宝箱",
         "enabled": false,
         "recognition": {

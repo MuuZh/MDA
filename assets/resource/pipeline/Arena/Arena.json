@@ -31,7 +31,7 @@
             "[JumpBack]CommonConfirmAction",
             "[JumpBack]CommonConfirmReward",
             "ArenaSpecialRewardClaim",
-            "BaseEndTask"
+            "CommonEndTask"
         ]
     },
     "ArkEnterArena": {
@@ -90,7 +90,7 @@
             "ArenaEnterRookieArena",
             "ArenaEnterSpecialArena",
             "ArenaEnterChampionArena",
-            "BaseEndTask"
+            "CommonEndTask"
         ]
     },
     "ArenaFreeBattle": {

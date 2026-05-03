@@ -43,7 +43,7 @@
             "[JumpBack]DefenseRewards",
             "[JumpBack]BulletinBoard",
             "[JumpBack]BriefEncounter",
-            "BaseEndTask"
+            "CommonEndTask"
         ]
     },
     "OutpostMainPageEntered": {

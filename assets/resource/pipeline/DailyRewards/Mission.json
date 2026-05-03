@@ -1,13 +1,13 @@
 {
-    "Mission": {
+    "DailyRewardsMission": {
         "desc": "任务收取入口",
         "max_hit": 1,
         "next": [
-            "MissionStart",
-            "BaseEndTask"
+            "DailyRewardsMissionStart",
+            "CommonEndTask"
         ]
     },
-    "MissionStart": {
+    "DailyRewardsMissionStart": {
         "desc": "进入任务页面",
         "recognition": {
             "type": "TemplateMatch",
@@ -37,7 +37,7 @@
         "post_wait_freezes": 500,
         "next": [
             "[JumpBack]DailyRewardsClickMissionRedDot",
-            "BaseEndTask"
+            "CommonEndTask"
         ]
     },
     "DailyRewardsClickMissionRedDot": {
@@ -68,7 +68,7 @@
             }
         },
         "next": [
-            "[JumpBack]MissionClaimAll",
+            "[JumpBack]DailyRewardsMissionClaimAll",
             "[JumpBack]CommonConfirmReward",
             "DailyRewardsClickMissionRedDot",
             "CommonClosePage"
@@ -99,7 +99,7 @@
             }
         }
     },
-    "MissionClaimAll": {
+    "DailyRewardsMissionClaimAll": {
         "desc": "任务奖励领取",
         "recognition": {
             "type": "OCR",

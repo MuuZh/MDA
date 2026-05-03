@@ -57,11 +57,11 @@
             }
         },
         "next": [
-            "[JumpBack]StepUpPackagePurchase",
-            "ChooseOrdinaryPackage"
+            "[JumpBack]ShopStepUpPackagePurchase",
+            "ShopChooseOrdinaryPackage"
         ]
     },
-    "StepUpPackagePurchase": {
+    "ShopStepUpPackagePurchase": {
         "desc": "购买StepUp礼包",
         "max_hit": 1,
         "recognition": {
@@ -85,7 +85,7 @@
             "CommonConfirmReward"
         ]
     },
-    "ChooseOrdinaryPackage": {
+    "ShopChooseOrdinaryPackage": {
         "desc": "选择普通礼包",
         "recognition": {
             "type": "TemplateMatch",
@@ -108,7 +108,7 @@
         "next": [
             "[JumpBack]CashShopClickRedDot",
             "[JumpBack]CommonConfirmReward",
-            "BaseEndTask"
+            "CommonEndTask"
         ]
     },
     "CashShopClickRedDot": {

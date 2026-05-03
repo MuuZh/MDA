@@ -22,7 +22,7 @@
                 {
                     "name": "Yes",
                     "pipeline_override": {
-                        "ChooseOrdinaryPackage": {
+                        "ShopChooseOrdinaryPackage": {
                             "enabled": true
                         }
                     }
@@ -30,7 +30,7 @@
                 {
                     "name": "No",
                     "pipeline_override": {
-                        "ChooseOrdinaryPackage": {
+                        "ShopChooseOrdinaryPackage": {
                             "enabled": false
                         }
                     }
@@ -44,7 +44,7 @@
                 {
                     "name": "Yes",
                     "pipeline_override": {
-                        "StepUpPackagePurchase": {
+                        "ShopStepUpPackagePurchase": {
                             "enabled": true
                         }
                     }
@@ -52,7 +52,7 @@
                 {
                     "name": "No",
                     "pipeline_override": {
-                        "StepUpPackagePurchase": {
+                        "ShopStepUpPackagePurchase": {
                             "enabled": false
                         }
                     }

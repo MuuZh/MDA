@@ -3,11 +3,11 @@
         "desc": "Pass入口",
         "max_hit": 1,
         "next": [
-            "PassStart",
-            "BaseEndTask"
+            "DailyRewardsPassStart",
+            "CommonEndTask"
         ]
     },
-    "PassStart": {
+    "DailyRewardsPassStart": {
         "desc": "Pass入口",
         "recognition": {
             "type": "TemplateMatch",
@@ -28,8 +28,8 @@
             "[JumpBack]DailyRewardsClickPassRewardRedDot",
             "[JumpBack]DailyRewardsClickPassRedDot",
             "[JumpBack]DailyRewardsEnterPass",
-            "PassStart",
-            "BaseEndTask"
+            "DailyRewardsPassStart",
+            "CommonEndTask"
         ]
     },
     "DailyRewardsClickPassRedDot": {
@@ -119,15 +119,15 @@
         },
         "post_wait_freezes": 500,
         "next": [
-            "DailyRewardsClaimRewardFolw"
+            "DailyRewardsClaimRewardFlow"
         ]
     },
-    "DailyRewardsClaimRewardFolw": {
+    "DailyRewardsClaimRewardFlow": {
         "desc": "领取Pass奖励流程",
         "next": [
-            "[JumpBack]PassClaimAll",
+            "[JumpBack]DailyRewardsPassClaimAll",
             "[JumpBack]CommonConfirmReward",
-            "BaseEndTask"
+            "CommonEndTask"
         ]
     },
     "DailyRewardsPassClaimed": {
@@ -155,7 +155,7 @@
             }
         }
     },
-    "PassClaimAll": {
+    "DailyRewardsPassClaimAll": {
         "desc": "领取所有Pass奖励",
         "recognition": {
             "type": "OCR",

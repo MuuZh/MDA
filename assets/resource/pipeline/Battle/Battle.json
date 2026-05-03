@@ -11,20 +11,20 @@
         },
         "next": [
             "ManualInterceptionBattle",
-            "[JumpBack]CanQuickBattle",
-            "[JumpBack]CanBattle",
+            "[JumpBack]BattleCanQuickBattle",
+            "[JumpBack]BattleCanBattle",
             "[JumpBack]BattleClosePage",
-            "BaseEndTask"
+            "CommonEndTask"
         ]
     },
-    "CanQuickBattle": {
+    "BattleCanQuickBattle": {
         "desc": "快速战斗可行性检测",
         "recognition": {
             "type": "And",
             "param": {
                 "all_of": [
-                    "BattleQuickBattleVisible",
-                    "BattleQuickBattleAvailable"
+                    "QuickBattleVisible",
+                    "QuickBattleAvailable"
                 ]
             }
         },
@@ -34,7 +34,7 @@
         "post_wait_freezes": 500,
         "next": [
             "[JumpBack]MultipleBattle",
-            "InBattle"
+            "BattleInBattle"
         ]
     },
     "MultipleBattle": {
@@ -77,10 +77,10 @@
             "type": "Click"
         },
         "next": [
-            "MultipleBattleStartBattle"
+            "MultipleBattleStart"
         ]
     },
-    "MultipleBattleStartBattle": {
+    "MultipleBattleStart": {
         "desc": "多次战斗点击进行战斗",
         "recognition": {
             "type": "OCR",
@@ -101,14 +101,14 @@
         },
         "post_wait_freezes": 500
     },
-    "InBattle": {
+    "BattleInBattle": {
         "desc": "战斗中",
         "timeout": 180000,
         "next": [
             "[JumpBack]BattleClickAutoBurst",
             "[JumpBack]BattleClickAutoShoot",
             "[JumpBack]DialoguesSkipStory",
-            "[JumpBack]NextState",
+            "[JumpBack]BattleNextState",
             "BattleSettlement"
         ]
     },
@@ -156,7 +156,7 @@
             "type": "Click"
         }
     },
-    "NextState": {
+    "BattleNextState": {
         "desc": "下一关卡",
         "recognition": {
             "type": "OCR",
@@ -198,10 +198,10 @@
         },
         "next": [
             "BattleSettlement",
-            "BaseEndTask"
+            "CommonEndTask"
         ]
     },
-    "CanBattle": {
+    "BattleCanBattle": {
         "desc": "战斗可行性检测",
         "recognition": {
             "type": "And",
@@ -216,7 +216,7 @@
             "type": "Click"
         },
         "next": [
-            "InBattle"
+            "BattleInBattle"
         ]
     },
     "BattleClosePage": {
@@ -239,7 +239,7 @@
             "type": "Click"
         }
     },
-    "BattleQuickBattleVisible": {
+    "QuickBattleVisible": {
         "desc": "快速战斗的标识",
         "recognition": {
             "type": "OCR",
@@ -256,12 +256,12 @@
             }
         }
     },
-    "BattleQuickBattleAvailable": {
+    "QuickBattleAvailable": {
         "desc": "可以快速战斗的标识",
         "recognition": {
             "type": "ColorMatch",
             "param": {
-                "roi": "BattleQuickBattleVisible",
+                "roi": "QuickBattleVisible",
                 "lower": [
                     200,
                     200,

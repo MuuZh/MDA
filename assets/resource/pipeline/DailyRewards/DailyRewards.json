@@ -17,13 +17,13 @@
             }
         },
         "next": [
-            "[JumpBack]FriendPoints",
-            "[JumpBack]Email",
-            "[JumpBack]RankingRewards",
-            "[JumpBack]Mission",
+            "[JumpBack]DailyRewardsFriendPoints",
+            "[JumpBack]DailyRewardsEmail",
+            "[JumpBack]DailyRewardsRankingRewards",
+            "[JumpBack]DailyRewardsMission",
             "[JumpBack]DailyRewardsPassMain",
-            "[JumpBack]FreeRecruit",
-            "BaseEndTask"
+            "[JumpBack]DailyRewardsFreeRecruitEntry",
+            "CommonEndTask"
         ]
     }
 }

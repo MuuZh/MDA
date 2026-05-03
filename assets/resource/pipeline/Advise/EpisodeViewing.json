@@ -1,5 +1,5 @@
 {
-    "EpisodeViewing": {
+    "AdviseEpisodeViewing": {
         "desc": "花絮鉴赏会",
         "recognition": {
             "type": "TemplateMatch",
@@ -60,12 +60,12 @@
         },
         "next": [
             "[JumpBack]AdviseStory",
-            "[JumpBack]PlayEpisode",
-            "[JumpBack]EpisodeViewingReward",
+            "[JumpBack]AdvisePlayEpisode",
+            "[JumpBack]AdviseEpisodeViewingReward",
             "CommonClosePage"
         ]
     },
-    "PlayEpisode": {
+    "AdvisePlayEpisode": {
         "desc": "播放花絮",
         "recognition": {
             "type": "OCR",
@@ -85,7 +85,7 @@
             "type": "Click"
         }
     },
-    "EpisodeViewingReward": {
+    "AdviseEpisodeViewingReward": {
         "desc": "花絮鉴赏会奖励",
         "recognition": {
             "type": "OCR",

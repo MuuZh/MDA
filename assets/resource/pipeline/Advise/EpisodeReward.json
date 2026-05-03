@@ -1,5 +1,5 @@
 {
-    "EpisodeReward": {
+    "AdviseEpisodeReward": {
         "desc": "花絮奖励",
         "recognition": {
             "type": "TemplateMatch",
@@ -30,7 +30,7 @@
         "post_wait_freezes": 500,
         "next": [
             "AdviseClickEpisode",
-            "[JumpBack]EpisodeRewardScrollDown",
+            "[JumpBack]AdviseEpisodeRewardScrollDown",
             "[JumpBack]AdviseEpisodeRedDotVisible",
             "CommonClosePage"
         ]
@@ -70,7 +70,7 @@
             "CommonClosePage"
         ]
     },
-    "EpisodeRewardScrollDown": {
+    "AdviseEpisodeRewardScrollDown": {
         "desc": "花絮奖励向下滑动",
         "max_hit": 1,
         "action": {

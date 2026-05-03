@@ -1,13 +1,13 @@
 {
-    "FreeRecruit": {
+    "DailyRewardsFreeRecruitEntry": {
         "desc": "免费招募入口",
         "max_hit": 1,
         "next": [
-            "FreeRecruitStart",
-            "BaseEndTask"
+            "DailyRewardsFreeRecruitStart",
+            "CommonEndTask"
         ]
     },
-    "FreeRecruitStart": {
+    "DailyRewardsFreeRecruitStart": {
         "desc": "免费招募",
         "recognition": {
             "type": "And",

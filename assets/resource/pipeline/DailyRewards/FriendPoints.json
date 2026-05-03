@@ -1,13 +1,13 @@
 {
-    "FriendPoints": {
+    "DailyRewardsFriendPoints": {
         "desc": "友情点入口",
         "max_hit": 1,
         "next": [
-            "FriendPointsStart",
-            "BaseEndTask"
+            "DailyRewardsFriendPointsStart",
+            "CommonEndTask"
         ]
     },
-    "FriendPointsStart": {
+    "DailyRewardsFriendPointsStart": {
         "desc": "友情点",
         "recognition": {
             "type": "TemplateMatch",
@@ -36,11 +36,11 @@
             }
         },
         "next": [
-            "SendAndReceive",
+            "DailyRewardsSendAndReceive",
             "CommonClosePage"
         ]
     },
-    "SendAndReceive": {
+    "DailyRewardsSendAndReceive": {
         "desc": "友情点收发",
         "recognition": {
             "type": "TemplateMatch",
@@ -69,7 +69,7 @@
         },
         "next": [
             "DailyRewardsConfirmReceive",
-            "SendAndReceive"
+            "DailyRewardsSendAndReceive"
         ]
     },
     "DailyRewardsConfirmReceive": {

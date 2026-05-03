@@ -80,7 +80,7 @@
         "next": [
             "[JumpBack]SimulationRoomBeginSimulation",
             "[JumpBack]SimulationRoomStartOverclock",
-            "BaseEndTask"
+            "CommonEndTask"
         ]
     }
 }

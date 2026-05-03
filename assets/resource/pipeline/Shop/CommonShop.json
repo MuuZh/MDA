@@ -5,10 +5,10 @@
         "next": [
             "[JumpBack]ShopEnterCommonShop",
             "[JumpBack]ShopConfirmPurchase",
-            "[JumpBack]FreeGoodsPurchase",
-            "[JumpBack]CoreDustCasePurchase",
-            "[JumpBack]FreeReset",
-            "BaseEndTask"
+            "[JumpBack]ShopFreeGoodsPurchase",
+            "[JumpBack]ShopCoreDustCasePurchase",
+            "[JumpBack]ShopFreeReset",
+            "CommonEndTask"
         ]
     },
     "ShopEnterCommonShop": {
@@ -54,7 +54,7 @@
             }
         }
     },
-    "FreeGoodsPurchase": {
+    "ShopFreeGoodsPurchase": {
         "desc": "购买免费商品",
         "recognition": {
             "type": "TemplateMatch",
@@ -74,7 +74,7 @@
             "type": "Click"
         }
     },
-    "CoreDustCasePurchase": {
+    "ShopCoreDustCasePurchase": {
         "desc": "购买芯尘盒",
         "recognition": {
             "type": "TemplateMatch",
@@ -95,7 +95,7 @@
             "type": "Click"
         }
     },
-    "FreeReset": {
+    "ShopFreeReset": {
         "desc": "免费刷新",
         "recognition": {
             "type": "TemplateMatch",
@@ -124,7 +124,7 @@
         },
         "next": [
             "ShopConfirmReset",
-            "FreeReset"
+            "ShopFreeReset"
         ]
     },
     "ShopConfirmReset": {
@@ -161,8 +161,8 @@
         },
         "next": [
             "[JumpBack]CommonClosePage",
-            "FreeReset",
-            "BaseEndTask"
+            "ShopFreeReset",
+            "CommonEndTask"
         ]
     },
     "ShopGemVisible": {

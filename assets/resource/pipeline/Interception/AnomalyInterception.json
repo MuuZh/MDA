@@ -27,15 +27,15 @@
             }
         },
         "next": [
-            "AnomalyKraken",
-            "AnomalyMirrorContainer",
-            "AnomalyIndivilia",
-            "AnomalyHarvester",
-            "AnomalyUltra",
-            "[JumpBack]NextAnomaly"
+            "InterceptionAnomalyKraken",
+            "InterceptionAnomalyMirrorContainer",
+            "InterceptionAnomalyIndivilia",
+            "InterceptionAnomalyHarvester",
+            "InterceptionAnomalyUltra",
+            "[JumpBack]InterceptionNextAnomaly"
         ]
     },
-    "AnomalyKraken": {
+    "InterceptionAnomalyKraken": {
         "desc": "克拉肯",
         "enabled": false,
         "recognition": {
@@ -79,7 +79,7 @@
             "BattleStart"
         ]
     },
-    "AnomalyMirrorContainer": {
+    "InterceptionAnomalyMirrorContainer": {
         "desc": "镜像容器",
         "enabled": false,
         "recognition": {
@@ -100,7 +100,7 @@
             "InterceptionChallenge"
         ]
     },
-    "AnomalyIndivilia": {
+    "InterceptionAnomalyIndivilia": {
         "desc": "茵迪维利亚",
         "enabled": false,
         "recognition": {
@@ -121,7 +121,7 @@
             "InterceptionChallenge"
         ]
     },
-    "AnomalyHarvester": {
+    "InterceptionAnomalyHarvester": {
         "desc": "死神",
         "enabled": false,
         "recognition": {
@@ -142,7 +142,7 @@
             "InterceptionChallenge"
         ]
     },
-    "AnomalyUltra": {
+    "InterceptionAnomalyUltra": {
         "desc": "过激派",
         "enabled": false,
         "recognition": {
@@ -163,7 +163,7 @@
             "InterceptionChallenge"
         ]
     },
-    "NextAnomaly": {
+    "InterceptionNextAnomaly": {
         "desc": "切换异常个体",
         "recognition": {
             "type": "TemplateMatch",

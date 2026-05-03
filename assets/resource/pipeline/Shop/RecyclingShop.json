@@ -5,14 +5,14 @@
         "next": [
             "[JumpBack]ShopEnterRecyclingShop",
             "[JumpBack]ShopConfirmPurchase",
-            "[JumpBack]GoodTeamworkBoxPurchase",
-            "[JumpBack]MaintenanceKitBoxPurchase",
-            "[JumpBack]CuratedManufacturerArmsPurchase",
-            "[JumpBack]GemPurchase",
-            "[JumpBack]VoucherPurchase",
-            "[JumpBack]UpgradeMaterialsPurchase",
+            "[JumpBack]ShopGoodTeamworkBoxPurchase",
+            "[JumpBack]ShopMaintenanceKitBoxPurchase",
+            "[JumpBack]ShopCuratedManufacturerArmsPurchase",
+            "[JumpBack]ShopGemPurchase",
+            "[JumpBack]ShopVoucherPurchase",
+            "[JumpBack]ShopUpgradeMaterialsPurchase",
             "[JumpBack]CommonScrollUp",
-            "BaseEndTask"
+            "CommonEndTask"
         ]
     },
     "ShopEnterRecyclingShop": {
@@ -57,7 +57,7 @@
             }
         }
     },
-    "GoodTeamworkBoxPurchase": {
+    "ShopGoodTeamworkBoxPurchase": {
         "desc": "购买优秀团队合作宝箱",
         "enabled": false,
         "recognition": {
@@ -77,7 +77,7 @@
             "type": "Click"
         }
     },
-    "MaintenanceKitBoxPurchase": {
+    "ShopMaintenanceKitBoxPurchase": {
         "desc": "购买保养工具箱",
         "enabled": false,
         "recognition": {
@@ -97,7 +97,7 @@
             "type": "Click"
         }
     },
-    "CuratedManufacturerArmsPurchase": {
+    "ShopCuratedManufacturerArmsPurchase": {
         "desc": "购买企业精选武装",
         "enabled": false,
         "recognition": {
@@ -117,7 +117,7 @@
             "type": "Click"
         }
     },
-    "GemPurchase": {
+    "ShopGemPurchase": {
         "desc": "购买珠宝",
         "enabled": false,
         "recognition": {
@@ -137,7 +137,7 @@
             "type": "Click"
         }
     },
-    "VoucherPurchase": {
+    "ShopVoucherPurchase": {
         "desc": "购买所有礼物券",
         "enabled": false,
         "recognition": {
@@ -157,7 +157,7 @@
             "type": "Click"
         }
     },
-    "UpgradeMaterialsPurchase": {
+    "ShopUpgradeMaterialsPurchase": {
         "desc": "购买所有养成材料",
         "enabled": false,
         "recognition": {

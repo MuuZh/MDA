@@ -1,11 +1,11 @@
 {
     "AdviseMain": {
         "next": [
-            "HallEnterNikke",
+            "AdviseEnterNikkePage",
             "[JumpBack]NavigationEnterHall"
         ]
     },
-    "HallEnterNikke": {
+    "AdviseEnterNikkePage": {
         "desc": "进入妮姬界面",
         "recognition": {
             "type": "TemplateMatch",
@@ -34,12 +34,12 @@
         },
         "post_wait_freezes": 500,
         "next": [
-            "NikkeEnterAdvise",
-            "[JumpBack]NikkeMainPageEntered",
-            "HallEnterNikke"
+            "AdviseEnterAdvisePage",
+            "[JumpBack]AdviseNikkeMainPageEntered",
+            "AdviseEnterNikkePage"
         ]
     },
-    "NikkeEnterAdvise": {
+    "AdviseEnterAdvisePage": {
         "desc": "进入咨询界面",
         "recognition": {
             "type": "OCR",
@@ -60,13 +60,13 @@
         },
         "post_wait_freezes": 500,
         "next": [
-            "[JumpBack]EpisodeViewing",
-            "ChooseNikke",
+            "[JumpBack]AdviseEpisodeViewing",
+            "AdviseChooseNikke",
             "[JumpBack]AdviseMainPageEntered",
-            "NikkeEnterAdvise"
+            "AdviseEnterAdvisePage"
         ]
     },
-    "ChooseNikke": {
+    "AdviseChooseNikke": {
         "desc": "选择Nikke",
         "recognition": {
             "type": "OCR",
@@ -86,7 +86,7 @@
             "type": "Click"
         },
         "next": [
-            "ChooseNikke",
+            "AdviseChooseNikke",
             "AdviseStart"
         ]
     },
@@ -107,7 +107,7 @@
             }
         }
     },
-    "NikkeMainPageEntered": {
+    "AdviseNikkeMainPageEntered": {
         "desc": "处于妮姬界面",
         "recognition": {
             "type": "OCR",

@@ -6,12 +6,12 @@
             "entry": "DailyRewardsMain",
             "description": "$task.DailyRewards.description",
             "option": [
-                "FriendPoints",
-                "Email",
-                "RankingRewards",
-                "Mission",
+                "DailyRewardsFriendPoints",
+                "DailyRewardsEmail",
+                "DailyRewardsRankingRewards",
+                "DailyRewardsMission",
                 "DailyRewardsPassMain",
-                "FreeRecruit"
+                "DailyRewardsFreeRecruit"
             ],
             "group": [
                 "daily"
@@ -19,14 +19,14 @@
         }
     ],
     "option": {
-        "FriendPoints": {
+        "DailyRewardsFriendPoints": {
             "type": "switch",
-            "label": "$option.FriendPoints.label",
+            "label": "$option.DailyRewardsFriendPoints.label",
             "cases": [
                 {
                     "name": "Yes",
                     "pipeline_override": {
-                        "FriendPoints": {
+                        "DailyRewardsFriendPoints": {
                             "enabled": true
                         }
                     }
@@ -34,21 +34,21 @@
                 {
                     "name": "No",
                     "pipeline_override": {
-                        "FriendPoints": {
+                        "DailyRewardsFriendPoints": {
                             "enabled": false
                         }
                     }
                 }
             ]
         },
-        "Email": {
+        "DailyRewardsEmail": {
             "type": "switch",
-            "label": "$option.Email.label",
+            "label": "$option.DailyRewardsEmail.label",
             "cases": [
                 {
                     "name": "Yes",
                     "pipeline_override": {
-                        "Email": {
+                        "DailyRewardsEmail": {
                             "enabled": true
                         }
                     }
@@ -56,21 +56,21 @@
                 {
                     "name": "No",
                     "pipeline_override": {
-                        "Email": {
+                        "DailyRewardsEmail": {
                             "enabled": false
                         }
                     }
                 }
             ]
         },
-        "RankingRewards": {
+        "DailyRewardsRankingRewards": {
             "type": "switch",
-            "label": "$option.RankingRewards.label",
+            "label": "$option.DailyRewardsRankingRewards.label",
             "cases": [
                 {
                     "name": "Yes",
                     "pipeline_override": {
-                        "RankingRewards": {
+                        "DailyRewardsRankingRewards": {
                             "enabled": true
                         }
                     }
@@ -78,21 +78,21 @@
                 {
                     "name": "No",
                     "pipeline_override": {
-                        "RankingRewards": {
+                        "DailyRewardsRankingRewards": {
                             "enabled": false
                         }
                     }
                 }
             ]
         },
-        "Mission": {
+        "DailyRewardsMission": {
             "type": "switch",
-            "label": "$option.Mission.label",
+            "label": "$option.DailyRewardsMission.label",
             "cases": [
                 {
                     "name": "Yes",
                     "pipeline_override": {
-                        "Mission": {
+                        "DailyRewardsMission": {
                             "enabled": true
                         }
                     }
@@ -100,7 +100,7 @@
                 {
                     "name": "No",
                     "pipeline_override": {
-                        "Mission": {
+                        "DailyRewardsMission": {
                             "enabled": false
                         }
                     }
@@ -129,14 +129,14 @@
                 }
             ]
         },
-        "FreeRecruit": {
+        "DailyRewardsFreeRecruit": {
             "type": "switch",
-            "label": "$option.FreeRecruit.label",
+            "label": "$option.DailyRewardsFreeRecruit.label",
             "cases": [
                 {
                     "name": "Yes",
                     "pipeline_override": {
-                        "FreeRecruit": {
+                        "DailyRewardsFreeRecruitEntry": {
                             "enabled": true
                         }
                     }
@@ -144,7 +144,7 @@
                 {
                     "name": "No",
                     "pipeline_override": {
-                        "FreeRecruit": {
+                        "DailyRewardsFreeRecruitEntry": {
                             "enabled": false
                         }
                     }

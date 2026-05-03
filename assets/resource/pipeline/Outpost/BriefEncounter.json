@@ -4,7 +4,7 @@
         "max_hit": 1,
         "next": [
             "OutpostEnterBriefEncounter",
-            "BaseEndTask"
+            "CommonEndTask"
         ]
     },
     "OutpostEnterBriefEncounter": {
@@ -28,12 +28,12 @@
         },
         "post_wait_freezes": 500,
         "next": [
-            "DailyLives",
+            "OutpostDailyLives",
             "OutpostEnterBriefEncounter",
-            "BaseEndTask"
+            "CommonEndTask"
         ]
     },
-    "DailyLives": {
+    "OutpostDailyLives": {
         "desc": "日常状态",
         "recognition": {
             "type": "TemplateMatch",

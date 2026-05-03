@@ -41,7 +41,7 @@ For each sibling group, determine if they are **mutually exclusive** or **indepe
 **Signals:**
 
 - Nodes represent alternative routes (only one should run)
-- Semantic grouping: same domain with different variants (e.g., "Normal" vs "Anomaly", "LevelD"/"LevelS"/"LevelEX")
+- Semantic grouping: same domain with different variants (e.g., "Normal" vs "Anomaly", "LevelDChoose"/"LevelSChoose"/"InterceptionEXChoose")
 - The parent node branches to them as alternatives
 
 **Pipeline override pattern:**

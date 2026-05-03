@@ -19,10 +19,10 @@
             "type": "Click"
         },
         "next": [
-            "ChallengeStagePage"
+            "EventChallengeStagePage"
         ]
     },
-    "ChallengeStagePage": {
+    "EventChallengeStagePage": {
         "desc": "活动挑战页面",
         "recognition": {
             "type": "And",
@@ -34,11 +34,11 @@
         },
         "post_wait_freezes": 500,
         "next": [
-            "ChallengeStage",
-            "ClearStage"
+            "EventChallengeStage",
+            "EventClearStage"
         ]
     },
-    "ChallengeStage": {
+    "EventChallengeStage": {
         "desc": "未挑战的关卡",
         "recognition": {
             "type": "OCR",
@@ -61,7 +61,7 @@
             "BattleStart"
         ]
     },
-    "ClearStage": {
+    "EventClearStage": {
         "desc": "已挑战的关卡",
         "recognition": {
             "type": "OCR",
