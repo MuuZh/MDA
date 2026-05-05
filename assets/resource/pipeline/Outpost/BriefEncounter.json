@@ -10,16 +10,11 @@
     "OutpostEnterBriefEncounter": {
         "desc": "进入突发活动",
         "recognition": {
-            "type": "OCR",
+            "type": "And",
             "param": {
-                "roi": [
-                    30,
-                    55,
-                    73,
-                    27
-                ],
-                "expected": [
-                    "^[1-9]\\d*$"
+                "all_of": [
+                    "OutpostDailyLivesAvailable",
+                    "OutpostStaminaAvailable"
                 ]
             }
         },
@@ -32,6 +27,40 @@
             "OutpostEnterBriefEncounter",
             "CommonEndTask"
         ]
+    },
+    "OutpostDailyLivesAvailable": {
+        "desc": "日常状态次数足够",
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    62,
+                    57,
+                    40,
+                    24
+                ],
+                "expected": [
+                    "^[1-9]\\d*$"
+                ]
+            }
+        }
+    },
+    "OutpostStaminaAvailable": {
+        "desc": "体力次数足够",
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    128,
+                    62,
+                    21,
+                    14
+                ],
+                "expected": [
+                    "^[1-9]\\d*$"
+                ]
+            }
+        }
     },
     "OutpostDailyLives": {
         "desc": "日常状态",
@@ -52,9 +81,9 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 500,
         "next": [
-            "OutpostEnterDailyEvent",
-            "OutpostDailyLives"
+            "OutpostEnterDailyEvent"
         ]
     },
     "OutpostEnterDailyEvent": {
@@ -78,11 +107,49 @@
         },
         "post_wait_freezes": 500,
         "next": [
+            "[JumpBack]CommonConfirmAction"
+        ]
+    },
+    "OutpostDailyEventFlow": {
+        "desc": "进入剧情",
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    756,
+                    566,
+                    41,
+                    38
+                ],
+                "template": [
+                    "Outpost/Event.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": 500,
+        "next": [
             "[JumpBack]CommonConfirmAction",
             "[JumpBack]DialoguesSkipStory",
             "[JumpBack]CommonConfirmReward",
+            "BriefEncounterRepeat"
+        ]
+    },
+    "BriefEncounterRepeat": {
+        "desc": "再次执行突发活动",
+        "recognition": {
+            "type": "And",
+            "param": {
+                "all_of": [
+                    "OutpostMainPageEntered"
+                ]
+            }
+        },
+        "next": [
             "OutpostEnterBriefEncounter",
-            "OutpostEnterDailyEvent"
+            "CommonEndTask"
         ]
     }
 }
