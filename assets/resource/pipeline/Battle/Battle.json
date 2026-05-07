@@ -33,8 +33,9 @@
         },
         "post_wait_freezes": 500,
         "next": [
-            "[JumpBack]MultipleBattle",
-            "BattleInBattle"
+            "MultipleBattle",
+            "MultipleBattleStart",
+            "BattleOperationComplete"
         ]
     },
     "MultipleBattle": {
@@ -99,7 +100,10 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 500
+        "post_wait_freezes": 500,
+        "next": [
+            "BattleInBattle"
+        ]
     },
     "BattleInBattle": {
         "desc": "战斗中",
