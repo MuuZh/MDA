@@ -123,18 +123,20 @@
                 {
                     "name": "Yes",
                     "pipeline_override": {
-                        "LargeEventStarAnisMerchBagClick": {
-                            "enabled": true
+                        "LargeEventMainPageFlow": {
+                            "next": [
+                                "[JumpBack]LargeEventLoginStamp",
+                                "[JumpBack]LargeEventChallenge",
+                                "[JumpBack]LargeEventStory",
+                                "[JumpBack]LargeEventMission",
+                                "[JumpBack]LargeEventStarAnisMerchBagClick",
+                                "CommonEndTask"
+                            ]
                         }
                     }
                 },
                 {
-                    "name": "No",
-                    "pipeline_override": {
-                        "LargeEventStarAnisMerchBagClick": {
-                            "enabled": false
-                        }
-                    }
+                    "name": "No"
                 }
             ]
         },
