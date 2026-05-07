@@ -57,10 +57,20 @@ func (c *MembershipChecker) OnTaskerTask(tasker *maa.Tasker, event maa.EventStat
 	}
 
 	// Non-member trying to run a member-only task
+	sponsorURL := fmt.Sprintf(
+		"https://doropay.top?cpu=%s&uuid=%s&bios=%s&board=%s&disk=%s&guid=%s",
+		status.DeviceCode.CPUHash,
+		status.DeviceCode.UUIDHash,
+		status.DeviceCode.BIOSHash,
+		status.DeviceCode.BoardHash,
+		status.DeviceCode.DiskHash,
+		status.DeviceCode.GUIDHash,
+	)
 	log.Warn().
 		Str("entry", detail.Entry).
 		Str("tier", status.MembershipType).
 		Int("level", status.UserLevel).
+		Str("sponsor_url", sponsorURL).
 		Msg(i18n.T("tasker.membership_warning.non_member_log"))
 
 	c.stopWithWarning(tasker, status, detail.Entry)

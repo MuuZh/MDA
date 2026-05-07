@@ -37,6 +37,7 @@ type MembershipStatus struct {
 	IsMember       bool
 	UserID         string
 	UnsupportedTier bool
+	DeviceCode     DeviceCodeV6
 }
 
 var (
@@ -78,6 +79,7 @@ func checkMembership() *MembershipStatus {
 	// Generate device code
 	deviceCode := GenerateDeviceCodeV6()
 	cachedDeviceCode = deviceCode
+	defaultStatus.DeviceCode = deviceCode
 
 	log.Info().
 		Str("cpu_hash", shortHash(deviceCode.CPUHash)).
@@ -116,6 +118,7 @@ func checkMembership() *MembershipStatus {
 	// Calculate current membership status
 	status := calculateStatus(record)
 	status.UnsupportedTier = unsupported
+	status.DeviceCode = deviceCode
 
 	// Cache the result
 	cachedStatusMu.Lock()
