@@ -76,7 +76,7 @@
     },
     "ShopCoreDustCasePurchase": {
         "desc": "购买芯尘盒",
-        "max_hit": 1,
+        "max_hit": 2,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
