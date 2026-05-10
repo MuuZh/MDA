@@ -100,6 +100,8 @@
     "preset.QuickDaily.label": "快速日常",
     "preset.QuickDaily.description": "仅执行部分日常任务，快速拿满每日奖励",
     "focus.ManualInterceptionBattle.Succeeded": "检测到拦截战已刷新，请手动开始拦截战",
+    "task.MapPushing.label": "🍊自动推图",
+    "task.MapPushing.description": "需要单独勾选，在地图中靠近怪的地方点击启动，会自动点击怪物进行战斗和触发机关",
     "task.LargeEvent.label": "🍊大活动",
     "task.LargeEvent.description": "进入大活动界面，完成相关任务",
     "option.LargeEventTheme.label": "活动主题",

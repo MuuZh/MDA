@@ -105,6 +105,7 @@
         "tasks/Advise.json",
         "tasks/CoordinatedOperations.json",
         "tasks/DailyRewards.json",
+        "tasks/MapPushing.json",
         "tasks/LargeEvent.json",
         "tasks/preset/DailyFull.json",
         "tasks/preset/QuickDaily.json"

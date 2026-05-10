@@ -100,6 +100,8 @@
     "preset.QuickDaily.label": "Quick Daily",
     "preset.QuickDaily.description": "Only execute simulation room, interception, advise, outpost, shop, and daily rewards",
     "focus.ManualInterceptionBattle.Succeeded": "Interception battle has been refreshed, please start the battle manually",
+    "task.MapPushing.label": "🍊Auto Map Pushing",
+    "task.MapPushing.description": "Must be selected separately. Click to start near monsters on the map; it will automatically click monsters for battle and trigger mechanisms",
     "task.LargeEvent.label": "🍊Large Event",
     "task.LargeEvent.description": "Enter the large event interface and complete related tasks",
     "option.LargeEventTheme.label": "Event Theme",
