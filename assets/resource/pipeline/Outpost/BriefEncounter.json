@@ -107,7 +107,7 @@
         },
         "post_wait_freezes": 500,
         "next": [
-            "[JumpBack]CommonConfirmAction"
+            "OutpostDailyEventFlow"
         ]
     },
     "OutpostDailyEventFlow": {
