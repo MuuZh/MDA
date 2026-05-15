@@ -19,12 +19,14 @@ body:
     id: describe
     attributes:
       label: The problems you have encountered?
+      description: Describe the problem you want to solve or the scenario you encountered
     validations:
       required: false
   - type: textarea
     id: solution
     attributes:
       label: Any good ideas?
+      description: Describe your expected feature or solution
     validations:
       required: false
   - type: textarea

@@ -2,9 +2,17 @@ name: 其他议题（使用中文）
 description: 提出问题，而不是 Bug 反馈或需求建议
 labels: ["question"]
 body:
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 在提问之前...
+      options:
+        - label: 我已检查了置顶议题（Pinned Issue）（公告）、活跃议题（Open Issue）、已关闭议题（Closed Issue），确认我的问题未被提及
+          required: true
   - type: textarea
     id: describe
     attributes:
       label: 说说你遇到的问题？
+      description: 请尽可能详细地描述你的问题
     validations:
-      required: false
+      required: true

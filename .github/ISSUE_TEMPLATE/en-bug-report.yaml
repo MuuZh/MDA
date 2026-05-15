@@ -31,37 +31,46 @@ body:
             I have reviewed the Pinned issue (Announcements), Open issues, and Closed issues
             to ensure that my issue has not been mentioned.
           required: true
+        - label: >-
+            I have switched the game to **Simplified Chinese** interface
+            (MDA currently only supports Chinese interface,
+            other languages may cause recognition errors)
+          required: true
   - type: textarea
     id: describe
     attributes:
       label: Description
-      description: Please provide a detailed description of your issue.
+      description: Please provide a detailed description of your issue, including which specific task/function has the problem.
     validations:
       required: true
   - type: textarea
     id: version
     attributes:
-      label: Version
-      description: >-
-        Please provide the MXX version.
+      label: Version Information
+      description: |
+        Please provide the MDA version number (can be found in the bottom-left corner of the interface or the About page).
       placeholder: |
-        MXX Version:
+        MDA Version: e.g. 1.0.0
     validations:
       required: true
   - type: textarea
     id: logs
     attributes:
       label: Log and config files
-      description: >-
-        **After closing MXX, upload the following 3 files:**
-          1. The `maa.log` and `maa.bak.log` log file in the `debug` folder, and indicate the approximate point in time when the problem occurred.
-          2. The `maa_pi_config.json`(MaaPiCli) config file in the `config` folder
+      description: |
+        **Please follow these steps to package and upload logs:**
 
-        If you are using MacBook, please click the "File" option in the top-left corner of the screen, then click "Open Log Folder".
-        **Please drag and drop the full file in, not your own cuttings or copies;**
-        **compress it before uploading if too large.**
+        1. Go to **Settings → Debug**, check **Save Debug Images** (needs to be re-enabled each time you start)
+        2. **Only run the task that has the problem**, stop immediately after reproducing the issue
+        3. Click the **Export Log** icon next to **Run Log** in the bottom-right corner
+        4. In the `debug` folder that appears, find the generated archive and **extract** it
+        5. Drag the **`vision` folder** from the same directory into the extracted folder
+        6. Verify the folder contains: `vision` folder, `config` folder, `XXXX-XX-XX-X.log`, `go-service.log`, `maafw.log`
+        7. **Re-compress** the entire folder into a ZIP and upload
+
+        **Please drag and drop the complete ZIP file, not your own cuttings or copies**
       placeholder: |
-        Please confirm that MXX is not running before uploading files.
+        Please confirm you have packaged the logs as described above
     validations:
       required: true
   - type: textarea
@@ -69,41 +78,37 @@ body:
     attributes:
       label: Configuration information
       description: |
-        Please specify the operating system and version, emulator brand, emulator resolution, DPI, and frame rate;
-        If you are using MuMu 12 or LDPlayer 9, please specify whether Screenshot Enhancement is enabled;
-        Finally, please specify whether GPU accelerated inference is enabled, and if so, provide the GPU model.
+        Please specify:
+        - Operating system and version
+        - Emulator brand and version
+        - Emulator resolution, DPI, and frame rate
+        - Whether GPU accelerated inference is enabled (if so, provide GPU model)
     validations:
       required: true
   - type: textarea
     id: screenshots
     attributes:
       label: Screenshots or recordings
-      description: >-
-        In the `debug` directory, within the functionally categorized folders, 
-        there are some error images captured automatically.
-        If related to this issue, please upload them together.
+      description: |
+        Upload screenshots or recordings to help explain your problem, including but not limited to:
+        - MDA software screenshots
+        - Game screen screenshots
+        - Error images from functionally categorized folders in debug directory (if any)
 
-        If available, upload screenshots and recordings to help explain your problem,
-        including but not limited to screenshots of MXX software,
-        screenshots of game screens, MXX debug screenshots (`debug/vision` path pictures,
-        after modifying `save_draw` in `config/maa_option.json` to `true`, run MXX again to obtain)
+        If the problem is **recognition related**, please provide
+        the **original image** taken by the emulator's own screenshot tool (or via adb).
 
-        If the problem is **recognition related**, please help by providing
-        the **original image** taken by the emulator's own screenshot tool
-        (or via adb).
-
-        Screenshots taken with other tools may contain the frames of the window/emulator
+        Screenshots taken with other tools may contain window frames
         and their aspect ratio and resolution are inconsistent,
-        which makes it harder for us to debug.
+        which makes it harder to debug.
 
-        If the file siz is too large, you may compress it before uploading.
-
+        If the file size is too large, compress it before uploading.
     validations:
       required: false
   - type: textarea
     id: others
     attributes:
-      label: Anthing else?
+      label: Anything else?
       description: |
         Anything that will give us more insight into the problem you are having.
     validations:

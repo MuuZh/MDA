@@ -2,9 +2,17 @@ name: Others (in English)
 description: Ask a question rather than a bug report or feature request.
 labels: ["question"]
 body:
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before raising the issue...
+      options:
+        - label: I have reviewed the Pinned issue (Announcements), Open issues, and Closed issues to ensure that my question has not been mentioned.
+          required: true
   - type: textarea
     id: describe
     attributes:
       label: The problems you have encountered?
+      description: Please provide a detailed description of your question
     validations:
-      required: false
+      required: true

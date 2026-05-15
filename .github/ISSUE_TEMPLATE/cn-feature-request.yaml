@@ -1,13 +1,13 @@
 name: 需求建议（使用中文）
 description: 新功能、建议等
-labels: ["enhancement"]
+labels: [“enhancement”]
 body:
   - type: checkboxes
     id: checks
     attributes:
       label: 在提问之前...
       options:
-        - label: 我填写了简短且清晰明确的标题，以便开发者在翻阅 Issue 列表时能快速确定大致问题。而不是“一个建议”、“卡住了”等
+        - label: 我填写了简短且清晰明确的标题，以便开发者在翻阅 Issue 列表时能快速确定大致问题。而不是”一个建议”、”卡住了”等
           required: true
         - label: 我基本确定这是一个新功能/建议，而不是遇到了 Bug（不确定的话请附上日志）
           required: true
@@ -19,12 +19,14 @@ body:
     id: describe
     attributes:
       label: 说说你遇到的问题？
+      description: 描述你希望解决的问题或遇到的场景
     validations:
       required: false
   - type: textarea
     id: solution
     attributes:
       label: 有什么好的想法？
+      description: 描述你期望的功能或解决方案
     validations:
       required: false
   - type: textarea
