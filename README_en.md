@@ -15,7 +15,18 @@ Maa Doro Assistant
 
 MDA is a game automation assistant built on [MaaFramework](https://github.com/MaaXYZ/MaaFramework), rewritten from [DoroHelper](https://github.com/1204244136/DoroHelper).
 
-> **MaaFramework** is a next-generation automation testing framework based on image recognition technology, derived from the development experience of [MAA](https://github.com/MaaAssistantArknights/MaaAssistantArknights). It features low-code development with high extensibility.
+---
+
+## Member Features
+
+To provide a more stable and efficient automation experience, this project is currently **maintained and updated full-time**. Due to the significant time and effort required for ongoing development, adapting to game updates, and maintaining the project, MDA adopts a **partial features available via sponsorship** model to ensure the long-term healthy development of the project.
+
+Details are as follows:
+
+- **Member Task标识**: In the task list, tasks prefixed with the orange **🍊** marker are exclusive to members.
+- **Sponsorship Method**: When you attempt to run any member task marked with 🍊, **a sponsorship link will be automatically displayed in the run log**. You can then sponsor the project through the link.
+
+Thank you to all contributors for their efforts, and to every user for their understanding and support! Your sponsorship is the biggest motivation for me to continuously optimize MDA.
 
 ---
 
@@ -31,11 +42,11 @@ If you are using an English or other language game interface, you may encounter 
 
 ### 1. First Launch
 
-Take a moment to explore the interface before running any tasks. **Features not shown in the UI are not yet implemented — please do not attempt to use them.**
+Take a moment to explore the interface before running any tasks to understand the available features and settings.
 
 ### 2. Set Up Hotkeys (Recommended)
 
-Go to **Settings (top-right corner) → Hotkeys** and enable global hotkeys. It's recommended to assign `F11` as a quick-stop key in case the program becomes unresponsive.
+Go to **Settings (top-right corner) → Hotkeys** and enable global hotkeys, in case the program becomes unresponsive and you need to exit.
 
 ---
 
